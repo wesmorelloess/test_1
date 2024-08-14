@@ -48,11 +48,11 @@
     </div>
   </div>
 
-<script src="src/settings.85e83.js" charset="utf-8"></script>
+<script src="src/settings.eb4a1.js" charset="utf-8"></script>
 
-<script src="main.84ff2.js" charset="utf-8"></script>
+<script src="main.f400f.js" charset="utf-8"></script>
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-  <script src="TONconnect0812b1.js" charset="utf-8"></script>
+  <script src="TONconnect0814b2.js" charset="utf-8"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script type="text/javascript">
 (function () {
@@ -64,8 +64,8 @@
     var debug = window._CCSettings.debug;
     var splash = document.getElementById('splash');
     splash.style.display = 'block';
-    
-    	var ton = new TONconnect();
+
+	var ton = new TONconnect();
 
     window.Telegram.WebApp.expand();
 
@@ -87,7 +87,7 @@
       domScript.addEventListener('load', scriptLoaded, false);
       document.body.appendChild(domScript);
     }
-
+    
     function loadScript (moduleName, cb) {
       function scriptLoaded () {
           document.body.removeChild(domScript);
