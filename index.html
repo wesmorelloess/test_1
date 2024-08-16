@@ -48,11 +48,11 @@
     </div>
   </div>
 
-<script src="src/settings.eb4a1.js" charset="utf-8"></script>
+<script src="src/settings.e7afe.js" charset="utf-8"></script>
 
-<script src="main.f400f.js" charset="utf-8"></script>
+<script src="main.4ca3b.js" charset="utf-8"></script>
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-  <script src="TONconnect0814b2.js" charset="utf-8"></script>
+  <script src="TONconnect0816b1.js" charset="utf-8"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script type="text/javascript">
 (function () {
@@ -64,30 +64,17 @@
     var debug = window._CCSettings.debug;
     var splash = document.getElementById('splash');
     splash.style.display = 'block';
-
-	var ton = new TONconnect();
-
+    
+    var ton = new TONconnect();
     window.Telegram.WebApp.expand();
-
     const overflow = 10
     document.body.style.overflowY = 'hidden'
     document.body.style.marginTop = `${overflow}px`
     document.body.style.height = window.innerHeight + overflow + "px"
     document.body.style.paddingBottom = `${overflow}px`
     window.scrollTo(0, overflow)
-    function loadScript (moduleName, cb) {
-      function scriptLoaded () {
-          document.body.removeChild(domScript);
-          domScript.removeEventListener('load', scriptLoaded, false);
-          cb && cb();
-      };
-      var domScript = document.createElement('script');
-      domScript.async = true;
-      domScript.src = moduleName;
-      domScript.addEventListener('load', scriptLoaded, false);
-      document.body.appendChild(domScript);
-    }
     
+
     function loadScript (moduleName, cb) {
       function scriptLoaded () {
           document.body.removeChild(domScript);
@@ -101,7 +88,7 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.ebb14.js', function () {
+    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.c4d1c.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
         loadScript(debug ? 'physics.js' : 'physics-min.ad9a7.js', window.boot);
       }
